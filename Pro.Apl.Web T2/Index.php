@@ -11,8 +11,13 @@
     <title>∃xist</title>
   </head>
   <body>
-<?php $Pa1 ="Uno de los mayores problemas que tenemos en la sociedad actual es la gran cantidad de opciones que tenemos para tomar    durante nuestra vida en cada pequeña oportunidad hay incontables opciones, como nunca antes en la historia de la humanidad la tecnología nos ha dado incontables deportes, oficios, profesiones, pasatiempos al alcance de la mano, haciendo que aspectos de la vida sean muy in  teresantes y a veces insatisfactorios por elecciones que solo causan estrés";
+
+<?php 
+$Pa1 ="Uno de los mayores problemas que tenemos en la sociedad actual es la gran cantidad de opciones que tenemos para tomar    durante nuestra vida en cada pequeña oportunidad hay incontables opciones, como nunca antes en la historia de la humanidad la tecnología nos ha dado incontables deportes, oficios, profesiones, pasatiempos al alcance de la mano, haciendo que aspectos de la vida sean muy in  teresantes y a veces insatisfactorios por elecciones que solo causan estrés";
 $Pa2= "Como empresa te acompañaremos en cada aspecto de la vida en que tú quieras, te ayudaremos con una serie de servicios pensados en tu salud, entretención, desarrollo personal, profesional y sobre todo para aliviar todo el estrés que sea posible";
+$Pa3= "Para esto hemos creado un ecosistema de inteligencias artificiales especializadas en ayudarte a tomar toda decisión que te causen o pueda causar estrés, este ecosistema esta respaldado en tecnología desarrollada por nosotros, las II.AA. cada una con una especialización distinta con su propia capacidad de procesamiento cuántico al servicio de nuestros clientes";
+$Pa4= "Nuestra visión es que la tecnología debe estar al servicio de quien así lo requiera, tomar lo que mejor hace una maquina y aprovechar esto. ¿Que es lo que hace mejor? considerar variables, calcular y obtener resultados, estos resultados son entregados como opciones para que decidas, esto lo realizamos a través de una serie de algoritmos en nuestras II.AA. donde nuestro primer pilar es la seguridad de tu información y requerimientos, la confidencialidad es la primera de nuestras preocupaciones por lo mismo es el primer punto en nuestro contrato.";
+$Pa5="¿Como te entregamos este servicio, cuando y donde? eso lo decides tu nuestro ecosistema esta presente para celulares, relojes inteligentes, Tablet en todas las marcas y con todos los sistemas operativos con que actualmente tengan una participación de mercado mayor al 10%. La gran duda ¿Que hace exactamente nuestra compañía? lo primero es definir que es lo que necesitas, tus meta a alcanzar con cada mayor detalle que entregues mas exacta y precisas serán las sugerencias que te entreguemos, si indicas que quieres perder el 20% de tu masa corporal en 2 meses: la App te solicitara sacar fotos de tu refrigerador con cada comida para darte una receta que se ajusten a tu solicitud, aprender Chino Mandarín lo antes posible: a través de distintas preguntas te indicara, en base a tus horarios y disponibilidad en cuanto tiempo podrías lograrlo siguiendo los consejos, te dará las opciones de donde puedas aprender, en que formato de enseñanza, y donde encontrarla, convertirte en un líder: según el análisis de tus habilidades actuales, cuantificando fortalezas y debilidades que debes trabajar, te dirá si necesitas algún tipo de coach y donde encontrarlo, generar confianza: te dará consejos de comportamiento así como analizar que hábitos generar, si requerirá apoyo de algún especialista. Para esto no hay limites quieres que te de las opciones que te permitan vivir 120 años, entonces lo haremos, pero no es magia, quieres pedir convertirte en la persona mas rápida de 100 metros planos, entonces nuestro ecosistema te solicitara resultados de exámenes médicos para indicarte si es posible o n y cual podría ser tu mejor marca con sus consejos, ver una película, según tus gustos, carteleras disponibles y horarios te dará la mejor opción, quieres limitar el espacio geográfico, una cadena en específico, un formato de exhibición todo podrá ser calculado";
 ?>
 
     <div class="container">
@@ -43,16 +48,18 @@ $Pa2= "Como empresa te acompañaremos en cada aspecto de la vida en que tú quie
         </div>
       </div>
 
-      <?php
-      $directrio = "./CODIGOS/Pro.Apl.Web T2/*.jpg";
-      $images = glob($directrio);
-      echo $directrio;
-        foreach ($images as $image){echo '<img src="'.$image.'" alt="imagen" /><br />';}
-        ?>
+    <!--<?php
+    $directrio = "./*.jpg";
+    $images = glob($directrio);
+    foreach ($images as $image){
+        echo '<img src="'.$image.'" alt="imagen" /><br/>';
+    }
+    ?>-->
 
       <div class="Sec1">
         <p class="Pa1"><?php echo $Pa1?></p>
         <p class="Pa2"><?php echo $Pa2?></p>
+
         <div class="row">
           <div class="col-md-3">
             <a href="Estress.jpg" target="_blank">
@@ -60,7 +67,7 @@ $Pa2= "Como empresa te acompañaremos en cada aspecto de la vida en que tú quie
             </a>
           </div>
         </div>
-        <p class="Pa3">Para esto hemos creado un ecosistema de inteligencias artificiales especializadas en ayudarte a tomar toda decisión que te causen o pueda causar estrés, este ecosistema esta respaldado en tecnología desarrollada por nosotros, las II.AA. cada una con una especialización distinta con su propia capacidad de procesamiento cuántico al servicio de nuestros clientes</p>
+        <p class="Pa3"><?php echo $Pa3?></p>
         <div class="row">
           <div class="col-md-4">
             <a href="Servidores.jpg" target="_blank">
@@ -71,7 +78,7 @@ $Pa2= "Como empresa te acompañaremos en cada aspecto de la vida en que tú quie
       </div>
 
       <div class="Sec2">
-        <p class="Pa4">Nuestra visión es que la tecnología debe estar al servicio de quien así lo requiera, tomar lo que mejor hace una maquina y aprovechar esto. ¿Que es lo que hace mejor? considerar variables, calcular y obtener resultados, estos resultados son entregados como opciones para que decidas, esto lo realizamos a través de una serie de algoritmos en nuestras II.AA. donde nuestro primer pilar es la seguridad de tu información y requerimientos, la confidencialidad es la primera de nuestras preocupaciones por lo mismo es el primer punto en nuestro contrato.</p>
+        <p class="Pa4"><?php echo $Pa4?></p>
         <div class="row">
           <div class="col-md-4">
             <a href="Principios.jpg" target="_blank">
@@ -84,7 +91,7 @@ $Pa2= "Como empresa te acompañaremos en cada aspecto de la vida en que tú quie
             </a>
           </div>
         </div>
-        <p class="Pa5">¿Como te entregamos este servicio, cuando y donde? eso lo decides tu nuestro ecosistema esta presente para celulares, relojes inteligentes, Tablet en todas las marcas y con todos los sistemas operativos con que actualmente tengan una participación de mercado mayor al 10%. La gran duda ¿Que hace exactamente nuestra compañía? lo primero es definir que es lo que necesitas, tus meta a alcanzar con cada mayor detalle que entregues mas exacta y precisas serán las sugerencias que te entreguemos, si indicas que quieres perder el 20% de tu masa corporal en 2 meses: la App te solicitara sacar fotos de tu refrigerador con cada comida para darte una receta que se ajusten a tu solicitud, aprender Chino Mandarín lo antes posible: a través de distintas preguntas te indicara, en base a tus horarios y disponibilidad en cuanto tiempo podrías lograrlo siguiendo los consejos, te dará las opciones de donde puedas aprender, en que formato de enseñanza, y donde encontrarla, convertirte en un líder: según el análisis de tus habilidades actuales, cuantificando fortalezas y debilidades que debes trabajar, te dirá si necesitas algún tipo de coach y donde encontrarlo, generar confianza: te dará consejos de comportamiento así como analizar que hábitos generar, si requerirá apoyo de algún especialista. Para esto no hay limites quieres que te de las opciones que te permitan vivir 120 años, entonces lo haremos, pero no es magia, quieres pedir convertirte en la persona mas rápida de 100 metros planos, entonces nuestro ecosistema te solicitara resultados de exámenes médicos para indicarte si es posible o n y cual podría ser tu mejor marca con sus consejos, ver una película, según tus gustos, carteleras disponibles y horarios te dará la mejor opción, quieres limitar el espacio geográfico, una cadena en específico, un formato de exhibición todo podrá ser calculado</p>
+        <p class="Pa5"><?php echo $Pa5?></p>
         <div class="row">
           <div class="col-md-4">
             <a href="Horarios.jpg" target="_blank">
