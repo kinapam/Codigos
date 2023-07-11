@@ -1,0 +1,27 @@
+.Pa1{
+    font-size: medium;
+}
+.Pa2{
+    font-size: smaller;
+}
+.Pa3{
+    font-size: small;
+}
+.Pa4{
+    font-size: x-small;
+}
+.Pa5{
+    font-size: xx-small;
+}
+.Sec1{
+    background-color: #f4d2d2;
+}
+.Sec2{
+    background-color: #dbe7e3;
+}
+.navbar{
+    background-color: rgb(153, 245, 158);
+    }
+.footer{
+    background-color: rgb(153, 245, 158);
+}
