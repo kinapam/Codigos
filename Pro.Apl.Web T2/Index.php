@@ -48,14 +48,6 @@ $Pa5="¿Como te entregamos este servicio, cuando y donde? eso lo decides tu nues
         </div>
       </div>
 
-    <!--<?php
-    $directrio = "./*.jpg";
-    $images = glob($directrio);
-    foreach ($images as $image){
-        echo '<img src="'.$image.'" alt="imagen" /><br/>';
-    }
-    ?>-->
-
       <div class="Sec1">
         <p class="Pa1"><?php echo $Pa1?></p>
         <p class="Pa2"><?php echo $Pa2?></p>
